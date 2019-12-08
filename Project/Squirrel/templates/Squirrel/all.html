@@ -3,19 +3,22 @@
 {% block main %}
 <div class="album py-5 bg-light">
     <div class="container">
-
         <div>
             <p class="text-right">
             <a class="btn btn-primary btn-lg" href="{% url 'Squirrel:map' %}">Map</a>
             <a class="btn btn-primary btn-lg" href="{% url 'Squirrel:stats' %}">Stats</a>
-            <a class="btn btn-primary btn-lg" href="{% url 'Squirrel:add' %}">Add A Squirrel</a>
+            <a class="btn btn-primary btn-lg" href="{% url 'Squirrel:add' %}">Add A Squirrel </a>
             </p>
         </div>
         <div class="row">
             {% for squirrel in squirrels %}
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <svg class="bd-placeholder-img card-img-top" width="50%" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#0B3B2E"/>
+                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Squirrel</text>
+                    </svg>
                     <div class="card-body">
                         <p class="card-text">
                         <strong>{{ squirrel.name }}</strong>
@@ -24,7 +27,7 @@
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a class="btn btn-sm btn-outline-secondary" href="{% url 'Squirrel:details' squirrel.Unique_Squirrel_ID %}">View</a>
+                                <a class="btn btn-sm btn-outline-secondary" href="{% url 'Squirrel:details' squirrel.Unique_Squirrel_ID %}">View Information</a>
                             </div>
                         </div>
                     </div>
