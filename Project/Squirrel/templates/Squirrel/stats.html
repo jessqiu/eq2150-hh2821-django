@@ -1,0 +1,43 @@
+{% extends 'Squirrel/base.html' %}
+
+{% block main %}
+    <div class="container">
+        <p class = "text-center">
+            <h3>max Latitude: {{ max_Latitude }}</h3>
+            <h3>min Latitude: {{ min_Latitude }}</h3>
+        </p>
+        <p class = "text-center">
+            <h3>max Longitude: {{ max_Longitude }}</h3>
+            <h3>min Longitude: {{ min_Longitude }}</h3>
+        </p>
+        <hr />
+
+        <p class = "text-center">
+            <h1>Highlight Fur Color</h1>
+            <ul>
+        {% for Highlight_Fur_Color in list_Highlight_Fur_Color %}
+            <li><h3>{{ Highlight_Fur_Color }}</h3></li>
+        {% endfor %}
+            </ul>
+        </p>
+        <hr />
+
+        <p class = "text-center">
+            <h1>Location</h1>
+            <ul>
+        {% for Location in list_Location %}
+        <li><h3>{{ Location }}</h3></li>
+        {% endfor %}
+            </ul>
+        </p>
+        <hr />
+
+        <p class = "text-center">
+            <h2>max_Hectare_Squirrel_Number: {{ max_Hectare_Squirrel_Number }}</h2>
+            <h2>min_Hectare_Squirrel_Number: {{ min_Hectare_Squirrel_Number }}</h2>
+            <h2>avg_Hectare_Squirrel_Number: {{ avg_Hectare_Squirrel_Number }}</h2>
+        </p>
+        <hr />
+    </div>
+{% endblock %}
+
