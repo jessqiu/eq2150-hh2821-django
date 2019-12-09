@@ -15,5 +15,7 @@ handlers:
 
 - url: /.*
   script: auto
-
-service: foo-bar
+ 
+  
+  
+service: evil-squirrels
