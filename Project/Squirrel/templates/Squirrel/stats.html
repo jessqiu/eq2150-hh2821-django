@@ -2,40 +2,45 @@
 
 {% block main %}
     <div class="container">
+
+	<p class = "text-center">
+	<h4> Total Sightings: {{Total_Sightings_Number}}</h4>
+	</p>
+
         <p class = "text-center">
-            <h3>max Latitude: {{ max_Latitude }}</h3>
-            <h3>min Latitude: {{ min_Latitude }}</h3>
+            <h5>Max Latitude: {{ max_Latitude }}</h5>
+            <h5>Min Latitude: {{ min_Latitude }}</h5>
         </p>
         <p class = "text-center">
-            <h3>max Longitude: {{ max_Longitude }}</h3>
-            <h3>min Longitude: {{ min_Longitude }}</h3>
+            <h5>Max Longitude: {{ max_Longitude }}</h5>
+            <h5>Min Longitude: {{ min_Longitude }}</h5>
         </p>
         <hr />
 
         <p class = "text-center">
-            <h1>Highlight Fur Color</h1>
+            <h4>Highlight Fur Color</h4>
             <ul>
         {% for Highlight_Fur_Color in list_Highlight_Fur_Color %}
-            <li><h3>{{ Highlight_Fur_Color }}</h3></li>
+            <li><h5>{{ Highlight_Fur_Color }}</h5></li>
         {% endfor %}
             </ul>
         </p>
         <hr />
 
         <p class = "text-center">
-            <h1>Location</h1>
+       	<h3>Location</h3>
             <ul>
         {% for Location in list_Location %}
-        <li><h3>{{ Location }}</h3></li>
+        <li><h5>{{ Location }}</h5></li>
         {% endfor %}
             </ul>
         </p>
         <hr />
 
         <p class = "text-center">
-            <h2>max_Hectare_Squirrel_Number: {{ max_Hectare_Squirrel_Number }}</h2>
-            <h2>min_Hectare_Squirrel_Number: {{ min_Hectare_Squirrel_Number }}</h2>
-            <h2>avg_Hectare_Squirrel_Number: {{ avg_Hectare_Squirrel_Number }}</h2>
+            <h4>Max Squirrel Number in a Sight: {{ max_Hectare_Squirrel_Number }}</h4>
+            <h4>Min Squirrel Number in a Sight: {{ min_Hectare_Squirrel_Number }}</h4>
+            <h4>Avg Squirrel Number in a Sight: {{ avg_Hectare_Squirrel_Number }}</h4>
         </p>
         <hr />
     </div>

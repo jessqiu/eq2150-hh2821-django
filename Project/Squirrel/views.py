@@ -76,6 +76,7 @@ def stats(request):
         list_Hectare_Squirrel_Number.append(item.Hectare_Squirrel_Number)
 
     context = {
+            'Total_Sightings_Number':len(list_Hectare_Squirrel_Number),
             'max_Latitude': max_Latitude,
             'min_Latitude': min_Latitude,
             'max_Longitude': max_Longitude,
