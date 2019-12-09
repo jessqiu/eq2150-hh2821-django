@@ -10,10 +10,11 @@ This is a project where we develop an app tracking squirrels in Central Park. Th
 •	A view to delete a sighting
 •	A view with general stats about the sightings
 
+Our Server:
 
 Group 47 Section 01
 
-“UNIs:[uni1, uni2”. Eg. “UNIs: [eq2150, hh2821]”
+UNIs:[eq2150,hh2821]
 
 
 
