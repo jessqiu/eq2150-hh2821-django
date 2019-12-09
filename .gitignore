@@ -1,5 +1,5 @@
 
-/Project/Project/settings.py
-/Project/db.sqlite3
-/Project/Squirrel/__pycache__
+/Project/settings.py
+/db.sqlite3
+/Squirrel/__pycache__/
 .DS_Store
