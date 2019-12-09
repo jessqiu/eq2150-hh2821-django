@@ -11,6 +11,8 @@ This is a project where we develop an app tracking squirrels in Central Park. Th
 •	A view with general stats about the sightings
 
 Our Server:
+https://steadfast-slate-255421.appspot.com/sightings
+
 
 Group 47 Section 01
 
